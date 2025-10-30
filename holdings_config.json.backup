@@ -1,0 +1,30 @@
+{
+  "holdings": {},
+  "watchlist": {
+    "017811": {
+      "name": "东方人工智能混合C",
+      "invested": false,
+      "watch_start_date": "2025-10-30",
+      "note": "半导体"
+    },
+    "002963": {
+      "name": "易方达黄金ETF联接C",
+      "invested": false,
+      "watch_start_date": "2025-10-30",
+      "note": "黄金"
+    },
+    "020640": {
+      "name": "广发半导体",
+      "invested": false,
+      "watch_start_date": "2025-10-30",
+      "note": "半导体"
+    },
+    "002112": {
+      "name": "德邦鑫星",
+      "invested": false,
+      "watch_start_date": "2025-10-30",
+      "note": ""
+    }
+  },
+  "notes": "配置说明：\n1. holdings: 已投入的基金，会计算实际收益\n2. watchlist: 观察中的基金，通过均线分析判断买入时机\n3. invested: true表示已投入，false表示仅观察\n4. investment_start_date: 实际投入日期，用于准确计算历史收益"
+}

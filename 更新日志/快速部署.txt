@@ -1,0 +1,65 @@
+=================================================================
+基金管家 - 服务器快速部署指南
+=================================================================
+
+【准备信息】
+  - 服务器IP地址
+  - SSH用户名和密码
+  - 推送服务的密钥
+
+=================================================================
+【最简单部署方法：使用 WinSCP】
+=================================================================
+
+1. 下载安装 WinSCP
+   https://winscp.net/eng/download.php
+
+2. 连接服务器
+   - 打开 WinSCP
+   - 主机名: your_server_ip
+   - 用户名: your_username  
+   - 密码: your_password
+   - 点击"登录"
+
+3. 上传文件
+   - 双击进入 /opt 目录
+   - 如果没有 fund_manager 文件夹，右键创建
+   - 将以下文件拖拽上传：
+     * 所有 .py 文件
+     * requirements.txt
+     * holdings_config.json
+     * .env.example
+
+4. SSH 连接服务器执行命令
+   
+   打开命令行或PuTTY，运行：
+   
+   ssh username@your_server_ip
+   
+   输入服务器密码
+   
+   然后依次执行：
+   
+   cd /opt/fund_manager
+   
+   pip3 install -r requirements.txt
+   
+   # 配置环境变量（请替换为您的实际密钥）
+   cp .env.example .env
+   # 然后编辑 .env 文件，或使用命令：echo "SERVER_CHAN_KEY=your_key_here" > .env
+   
+   python3 daemon.py start
+   
+   python3 daemon.py status
+
+=================================================================
+【管理命令】
+=================================================================
+
+启动:  python3 daemon.py start
+停止:  python3 daemon.py stop
+重启:  python3 daemon.py restart
+状态:  python3 daemon.py status
+日志:  tail -f fund_manager.log
+
+=================================================================

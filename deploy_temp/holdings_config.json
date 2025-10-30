@@ -1,0 +1,35 @@
+{
+  "holdings": {
+    "017811": {
+      "name": "基金1",
+      "cost_basis": 1.0,
+      "amount": 10000,
+      "purchase_date": "2024-01-01"
+    },
+    "002963": {
+      "name": "基金2",
+      "cost_basis": 1.5,
+      "amount": 10000,
+      "purchase_date": "2024-01-01"
+    },
+    "020640": {
+      "name": "基金3",
+      "cost_basis": 1.2,
+      "amount": 10000,
+      "purchase_date": "2024-01-01"
+    },
+    "002112": {
+      "name": "基金4",
+      "cost_basis": 0.9,
+      "amount": 10000,
+      "purchase_date": "2024-01-01"
+    },
+    "021095": {
+      "name": "基金5",
+      "cost_basis": 1.1,
+      "amount": 10000,
+      "purchase_date": "2024-01-01"
+    }
+  },
+  "notes": "这是一个示例配置文件，请根据实际情况修改"
+}

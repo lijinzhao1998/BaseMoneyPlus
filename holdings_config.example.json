@@ -1,0 +1,36 @@
+{
+  "holdings": {
+    "017811": {
+      "name": "基金1（示例）",
+      "cost_basis": 1.0,
+      "amount": 10000,
+      "invested": true,
+      "investment_start_date": "2024-01-01",
+      "note": "示例持仓基金"
+    },
+    "002963": {
+      "name": "基金2（示例）",
+      "cost_basis": 1.5,
+      "amount": 10000,
+      "invested": true,
+      "investment_start_date": "2024-01-01",
+      "note": "示例持仓基金"
+    }
+  },
+  "watchlist": {
+    "161725": {
+      "name": "招商中证白酒（示例）",
+      "invested": false,
+      "watch_start_date": "2024-01-01",
+      "note": "示例观察基金 - 等待回调到低位"
+    },
+    "110011": {
+      "name": "易方达中小盘（示例）",
+      "invested": false,
+      "watch_start_date": "2024-06-01",
+      "note": "示例观察基金 - 长期关注"
+    }
+  },
+  "notes": "配置说明文档：\n\n【holdings（持仓基金）】\n- name: 基金名称\n- cost_basis: 买入时的净值\n- amount: 投资金额（元）\n- invested: 必须为 true\n- investment_start_date: 实际投入日期（重要！用于准确计算收益）\n- note: 备注信息（可选）\n\n【watchlist（观察基金）】\n- name: 基金名称\n- invested: 必须为 false\n- watch_start_date: 开始观察日期\n- note: 备注信息（记录观察原因）\n\n【使用方法】\n1. 复制此文件为 holdings_config.json\n2. 根据实际情况修改基金代码和配置\n3. 运行 py ma_analysis.py 进行均线分析\n4. 运行 py main.py 生成完整日报\n\n【重要提示】\n- investment_start_date 非常重要，影响收益计算准确性\n- 观察基金不会计入总资产和总收益\n- 定期更新配置文件以反映实际持仓变化"
+}
+
